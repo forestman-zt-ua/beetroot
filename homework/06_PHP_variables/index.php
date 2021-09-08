@@ -1,23 +1,36 @@
 <?php
 
-$name = 'Ярик';
-$age = 30;
+$name = 'Yaroslav';
+$Surname = 'Lisovyi';
 
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>06_PHP_variables</title>
-</head>
+    <title>06_PHP_variable</title>
+    <style>
+        .row {
+            margin: 10px 0;
+        }
+
+    </style>
 <body>
-<p>Ваше ім'я :
-    <output name="result"><?php
-        echo $name; ?></output>
-</p>
-<p>Ваш вік :
-    <output name="result"> <?php
-        echo $age; ?> </output>
-</p>
+<div>
+    <form>
+        <dib id = "app">
+            <form action="GET">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" autofocus value="<?php echo $name;?>">
+                </div>
+                <div>
+                    <label for="surname">Surname:</label>
+                    <input type="text" name="surname" id="surname" autofocus value="<?php echo $Surname;?>">
+                </div>
+            </form>
+        </dib>
+    </form>
+</div>
 </body>
+</head>
 </html>
