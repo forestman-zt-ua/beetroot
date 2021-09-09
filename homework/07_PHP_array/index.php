@@ -31,7 +31,8 @@ $language = array('English', 'Ukrainian', 'Spanish', 'Polish');
                     echo $Surname; ?>">
                 </div>
                 <div>
-                    Change language : <select name="language">
+                    <label for="language">Change language:</label>
+                    <select name="language">
                         <option value="1"> <?php
                             echo $language[0]; ?></option>
                         <option value="2"> <?php
