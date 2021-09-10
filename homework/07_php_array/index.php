@@ -3,17 +3,17 @@
 $name = 'Yaroslav';
 $surname = 'Lisovyi';
 $languages = [
-        '1' => 'English',
-        '2' =>  'Ukrainian',
-        '3' =>  'Spanish',
-        '4' =>  'Polish',
+        '1'=>'English',
+        '2'=>'Ukrainian',
+        '3'=>'Spanish',
+        '4'=>'Polish',
 ];
 
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>06_PHP_variable</title>
+    <title>06_PHP_vargit iable</title>
     <style>
         .row {
             margin: 10px 0;
