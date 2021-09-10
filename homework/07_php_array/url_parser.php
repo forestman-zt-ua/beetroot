@@ -1,7 +1,7 @@
 <?php
 
 $url = $_GET['url'];
-$query = array('query' => parse_url($url, PHP_URL_QUERY));
+$query = ['query' => parse_url($url, PHP_URL_QUERY)];
 
 ?>
 <!doctype html>

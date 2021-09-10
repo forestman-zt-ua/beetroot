@@ -2,12 +2,12 @@
 
 $name = 'Yaroslav';
 $surname = 'Lisovyi';
-$languages = array(
+$languages = [
         '1' => 'English',
         '2' =>  'Ukrainian',
         '3' =>  'Spanish',
         '4' =>  'Polish',
-);
+];
 
 ?>
 <!DOCTYPE html>
