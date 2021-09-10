@@ -2,7 +2,7 @@
 
 $name = 'Yaroslav';
 $surname = 'Lisovyi';
-$languages = [
+$languages = [               //array language
         '1'=>'English',
         '2'=>'Ukrainian',
         '3'=>'Spanish',
@@ -37,7 +37,7 @@ $languages = [
                         <select name="language">
                             <option value="1"> <?php
                                 foreach ($languages as $val => $lang) {
-                                    echo "<option value=\"$val\">$lang</option>";
+                                    echo "<option value=\"$val\">$lang</option>";//change language
                                 } ?>
                         </select>
                     </label>

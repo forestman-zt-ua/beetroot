@@ -1,7 +1,7 @@
 <?php
 
-$url = $_GET['url'];
-$query = ['query'=>parse_url($url,PHP_URL_QUERY)];
+$url = $_GET['url']; // get url from input
+$query = ['query'=>parse_url($url,PHP_URL_QUERY)];// make array from url to array
 
 ?>
 <!doctype html>
@@ -24,11 +24,11 @@ $query = ['query'=>parse_url($url,PHP_URL_QUERY)];
                     <label for="url">url:</label>
                     <input type="text" required name="url" id="url" autofocus>
                     <?php
-                    var_dump(parse_url($url));
+                    var_dump(parse_url($url)); //output url
                     ?>
                     <?php
-                    parse_str($query['query'], $output);
-                    var_dump($output);
+                    parse_str($query['query'], $output);//parse query
+                    var_dump($output);//output query
                     ?>
                 </div>
             </form>
