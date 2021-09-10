@@ -27,12 +27,12 @@ $languages = [
             <form action="GET">
                 <div>
                     <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" autofocus value="<?=
+                    <input type="text" name="name" required id="name" autofocus value="<?=
                     $name;?>">
                 </div>
                 <div>
                     <label for="surname">Surname:</label>
-                    <input type="text" name="surname" id="surname" autofocus value="<?=
+                    <input type="text" name="surname" required id="surname" autofocus value="<?=
                      $surname;?>">
                 </div>
                 <div>
