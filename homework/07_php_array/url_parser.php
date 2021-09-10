@@ -25,7 +25,10 @@ $query = ['query'=>parse_url($url,PHP_URL_QUERY)];
                     <input type="text" required name="url" id="url" autofocus>
                     <?php
                     var_dump(parse_url($url));
-                    var_dump($query);
+                    ?>
+                    <?php
+                    parse_str($query['query'], $output);
+                    var_dump($output);
                     ?>
                 </div>
             </form>
