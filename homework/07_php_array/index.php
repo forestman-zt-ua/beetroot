@@ -3,25 +3,28 @@
 $name = 'Yaroslav';
 $surname = 'Lisovyi';
 $languages = [
-    '1'=>'English',
-    '2'=>'Ukrainian',
-    '3'=>'Spanish',
-    '4'=>'Polish',
+        '1'=>'English',
+        '2'=>'Ukrainian',
+        '3'=>'Spanish',
+        '4'=>'Polish',
 ];
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>07_php_url_parser</title>
+    <title>06_PHP_vargit iable</title>
     <style>
+        .row {
+            margin: 10px 0;
+        }
 
-    </style>git
+    </style>
 <body>
 <div>
     <form>
-        <div id="app">
-            <form id="auth" action="" method="get">
+        <dib id="app">
+            <form action="GET">
                 <div>
                     <label for="name">Name:</label>
                     <input type="text" name="name" required id="name" autofocus value="<?=
@@ -30,22 +33,21 @@ $languages = [
                 <div>
                     <label for="surname">Surname:</label>
                     <input type="text" name="surname" required id="surname" autofocus value="<?=
-                    $surname;?>">
+                     $surname;?>">
                 </div>
                 <div>
                     <label for="language">Change language:</label>
-                    <label>
-                        <select name="language">
-                            <option value="1"> <?php
-                                foreach ($languages as $val => $lang) {
-                                    echo "<option value=\"$val\">$lang</option>";
-                                } ?>
-                        </select>
-                    </label>
+                    <select name="language">
+                        <option value="1"> <?php
+                            foreach ($languages as $val => $lang) {
+                                echo "<option value=\"$val\">$lang</option>";
+                            } ?>
+                    </select>
                 </div>
             </form>
-        </div>
+        </dib>
     </form>
 </div>
 </body>
+</head>
 </html>
