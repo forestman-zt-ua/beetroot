@@ -1,7 +1,7 @@
 <?php
 
-$url = $_GET;
-$query = array('query' => parse_url($url['URL'], PHP_URL_QUERY));
+$url = $_GET['url'];
+$query = array('query' => parse_url($url, PHP_URL_QUERY));
 
 ?>
 <!doctype html>
@@ -19,10 +19,10 @@ $query = array('query' => parse_url($url['URL'], PHP_URL_QUERY));
         <dib id="app">
             <form action="GET">
                 <div>
-                    <label for="URL">URL:</label>
-                    <input type="text" name="URL" id="URL" autofocus>
+                    <label for="url">url:</label>
+                    <input type="text" required name="url" id="url" autofocus>
                     <?php
-                    var_dump(parse_url($url['URL']));
+                    var_dump(parse_url($url));
                     var_dump($query);
                     ?>
                 </div>

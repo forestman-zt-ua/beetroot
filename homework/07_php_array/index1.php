@@ -1,8 +1,13 @@
 <?php
 
 $name = 'Yaroslav';
-$Surname = 'Lisovyi';
-$language = array('English', 'Ukrainian', 'Spanish', 'Polish');
+$surname = 'Lisovyi';
+$languages = array(
+        '1' => 'English',
+        '2' =>  'Ukrainian',
+        '3' =>  'Spanish',
+        '4' =>  'Polish',
+);
 
 ?>
 <!DOCTYPE html>
@@ -22,25 +27,21 @@ $language = array('English', 'Ukrainian', 'Spanish', 'Polish');
             <form action="GET">
                 <div>
                     <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" autofocus value="<?php
-                    echo $name; ?>">
+                    <input type="text" name="name" id="name" autofocus value="<?=
+                    $name;?>">
                 </div>
                 <div>
                     <label for="surname">Surname:</label>
-                    <input type="text" name="surname" id="surname" autofocus value="<?php
-                    echo $Surname; ?>">
+                    <input type="text" name="surname" id="surname" autofocus value="<?=
+                     $surname;?>">
                 </div>
                 <div>
                     <label for="language">Change language:</label>
                     <select name="language">
                         <option value="1"> <?php
-                            echo $language[0]; ?></option>
-                        <option value="2"> <?php
-                            echo $language[1]; ?></option>
-                        <option value="3"> <?php
-                            echo $language[2]; ?></option>
-                        <option value="4"> <?php
-                            echo $language[3]; ?></option>
+                            foreach ($languages as $val => $lang) {
+                                echo "<option value=\"$val\">$lang</option>";
+                            } ?>
                     </select>
                 </div>
             </form>
