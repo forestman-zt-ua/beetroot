@@ -2,11 +2,11 @@
 
 $name = 'Yaroslav';
 $surname = 'Lisovyi';
-$languages = [               //array language
-        '1'=>'English',
-        '2'=>'Ukrainian',
-        '3'=>'Spanish',
-        '4'=>'Polish',
+$languages = [              //array language
+    '1' => 'English',
+    '2' => 'Ukrainian',
+    '3' => 'Spanish',
+    '4' => 'Polish',
 ];
 
 ?>
@@ -24,12 +24,12 @@ $languages = [               //array language
                 <div>
                     <label for="name">Name:</label>
                     <input type="text" name="name" required id="name" autofocus value="<?=
-                    $name;?>">
+                    $name; ?>">
                 </div>
                 <div>
                     <label for="surname">Surname:</label>
                     <input type="text" name="surname" required id="surname" autofocus value="<?=
-                     $surname;?>">
+                    $surname; ?>">
                 </div>
                 <div>
                     <label for="language">Change language:</label>
