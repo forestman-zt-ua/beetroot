@@ -3,8 +3,8 @@
 
 $users = [];
 $users["39"] = ["name" => "Anton", "email" => "anton@gmail.com", "language" => "ru"];
-$users["2"] = ["name" => "Test", "email" => "test@test.com", "language" => "en"];
-$users["111111"] = ["name" => "vasy", "email" => "vasy@gmail.com", "language" => "ru"];
+$users["2"] = ["name" => "Test", "email" => "test@test.com", "language" => "ru"];
+$users["111111"] = ["name" => "vasy", "email" => "vasy@gmail.com", "language" => "ua"];
 $users["46"] = ["name" => "yriy", "email" => "yriy@gmail.com", "language" => "ru"];
 $users["8"] = ["name" => "gus", "email" => "gus@gmail.com", "language" => "ua"];
 $users["10"] = ["name" => "gus", "email" => "gus@gmail.com", "language" => "de"];
@@ -20,9 +20,14 @@ $hellow = [
 ksort($users);
 $minId = reset($users);
 $maxId = end($users);
-if ($maxId["language"] === $minId["language"] and $maxId["language"] === "ua" and $minId["language"] === "ua") {
-    echo $hellow["ua"];
-} elseif ($maxId["language"] === $minId["language"] and $maxId["language"] === "en" and $minId["language"] === "en") {
+if ($maxId["language"] === $minId["language"]){
+    echo ($hellow[$minId["language"]]);
+} else
+     echo ($hellow[$minId["language"]]);
+     echo ($hellow[$maxId["language"]]);
+
+
+/*} elseif ($maxId["language"] === $minId["language"] and $maxId["language"] === "en" and $minId["language"] === "en") {
     echo $hellow["en"];
 } elseif ($maxId["language"] === $minId["language"] and $maxId["language"] === "de" and $minId["language"] === "de") {
     echo $hellow["de"];
@@ -62,6 +67,6 @@ if ($maxId["language"] === $minId["language"] and $maxId["language"] === "ua" an
     echo($hellow['de'] . "\n" . $hellow["fr"]);
 } else {
     echo("Це капець!");
-}
+}*/
 
 

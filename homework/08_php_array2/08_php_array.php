@@ -9,20 +9,16 @@ $users["2"] = ["name" => "gus", "email" => "gus@gmail.com"];
 echo("кількість користувачів " . (count($users)) .  PHP_EOL);
 krsort($users);
 echo 'Sorted array: ' . PHP_EOL;
-var_export($users) . PHP_EOL;
+var_dump($users) . PHP_EOL;
 $minId = end($users);
 $almostMinId = prev($users);
 $maxId = reset($users);
 $almostMaxId = next($users);
 echo PHP_EOL . "------------------------------------------------------------" . PHP_EOL;
-var_export(compact('minId', 'almostMinId', 'maxId', 'almostMaxId'));
-echo "PHP_EOL";
+var_dump(compact('minId', 'almostMinId', 'maxId', 'almostMaxId'));
+echo PHP_EOL;
 $minIn = array_search($minId, $users, true);
 unset($users[$minIn]);
 
-var_export($users);
-
-
-
-
+var_dump($users);
 
