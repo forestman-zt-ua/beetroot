@@ -5,7 +5,7 @@ if (isset($_POST['login'])) {
     $login = $_POST["login"];
     $password = $_POST["password"];
 }
-$loginAndPassFile = file("passwd");
+$loginAndPassFile = file("usersPasswordBase");
 foreach ($loginAndPassFile as $value) {
     $loginPasswordArray = explode(" ", $value);
     $loginForTest = trim($loginPasswordArray["0"]);
