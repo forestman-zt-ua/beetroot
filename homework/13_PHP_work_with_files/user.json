@@ -1,0 +1,44 @@
+[
+  {
+    "Name": "Janet Gaynor",
+    "Login": "Janet",
+    "Email": "123456@gmail.com",
+    "Password": "12345678",
+    "Language": "UA"
+  },
+  {
+    "Name": "Sam Gaynor",
+    "Login": "Sam",
+    "Email": "12345@gmail.com",
+    "Password": "1234567",
+    "Language": "EN"
+  },
+  {
+    "Name": "Kate Gaynor",
+    "Login": "Kate",
+    "Email": "123467@gmail.com",
+    "Password": "123456780",
+    "Language": "RU"
+  },
+  {
+    "Name": "Bob Gaynor",
+    "Login": "Bob",
+    "Email": "1234@gmail.com",
+    "Password": "123456",
+    "Language": "UA"
+  },
+  {
+    "Name": "Voker Gaynor",
+    "Login": "JJoker",
+    "Email": "1213456@gmail.com",
+    "Password": "121345678",
+    "Language": "DE"
+  },
+  {
+    "Name": "Paul Gaynor",
+    "Login": "Paul",
+    "Email": "1123456@gmail.com",
+    "Password": "112345678",
+    "Language": "FR"
+  }
+]

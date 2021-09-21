@@ -1,7 +1,8 @@
 <?php
 
 $password = 'Qwert';
-if (iconv_strlen($password) > 7 && iconv_strlen($password) < 12) {
+$passwordLenght = iconv_strlen($password);
+if ($passwordLenght > 7 && $passwordLenght < 12) {
     echo('Пароль коректний');
 } else {
     echo('Зміни пароль');
