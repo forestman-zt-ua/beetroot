@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Table",
+    "coast": "1399",
+    "quantity": "32"
+  },
+  {
+    "name": "TV",
+    "coast": "1999",
+    "quantity": "31"
+  },
+  {
+    "name": "Keyboard",
+    "coast": "129",
+    "quantity": "35"
+  },
+  {
+    "name": "Mouse",
+    "coast": "99",
+    "quantity": "24"
+  },
+  {
+    "name": "Coffee",
+    "coast": "19",
+    "quantity": "100"
+  }
+]
