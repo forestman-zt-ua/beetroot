@@ -12,5 +12,5 @@ function orderSession(array $order): array
     if (!empty($_GET)) {
         $_SESSION = $_GET;
     }
-    throw new Exception('Hellow!');
+    throw new Exception('Your order is');
 }
